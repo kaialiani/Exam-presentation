@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.image {
+  width: 30rem;
+}
+
+.imageSmall {
+  width: 20rem;
+}
+
+.imageBig {
+  width: 50rem;
+}
+
+figure {
+  padding: 1rem;
+}
