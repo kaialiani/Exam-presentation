@@ -70,15 +70,15 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <h1>Artist info</h1>
-        <video loop autoPlay>
-          <source src="..public/video" type="video/quicktime" />
+        <h1>ARTIST INFO</h1>
+        <video width={900} height={500} loop autoPlay controls>
+          <source src="/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </TabPanel>
 
       <TabPanel value={value} index={1}>
-        <h1>Understanding data</h1>
+        <h1>UNDERSTANDING DATA</h1>
         <div className="flex">
           <div>
             <figure>
