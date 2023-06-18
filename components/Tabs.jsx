@@ -65,8 +65,9 @@ export default function BasicTabs() {
         >
           <Tab label="Feature" {...a11yProps(0)} />
           <Tab label="Understanding data" {...a11yProps(1)} />
-          <Tab label="next.config.js" {...a11yProps(2)} />
-          <Tab label="[slug]" {...a11yProps(3)} />
+          <Tab label="[slug]" {...a11yProps(2)} />
+          <Tab label="next.config.js" {...a11yProps(3)} />
+          <Tab label="other features" {...a11yProps(4)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -82,53 +83,75 @@ export default function BasicTabs() {
         <div className="flex">
           <div>
             <figure>
-              <img className="image" src="/slug-api.png" />
+              <img className="image" src="/slug-api.png" alt="slug-api" />
               <figcaption>example of slug page</figcaption>
             </figure>
             <figure>
-              <img className="imageSmall" src="/github-logos.png" />
+              <img
+                className="imageSmall"
+                src="/github-logos.png"
+                alt="github"
+              />
               <figcaption>logos folder in database</figcaption>
             </figure>
           </div>
 
           <figure>
-            <img className="image" src="bands-json.png" />
+            <img className="image" src="bands-json.png" alt="bands-json" />
             <figcaption>logos folder in database</figcaption>
           </figure>
         </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <figure>
-          <img className="imageBig" src="/localpic.png" />
-          <figcaption>Logo on our server</figcaption>
-        </figure>
-        <figure>
-          <img className="imageBig" src="/placeimg.png" />
-          <figcaption>Logo on external server (placeimg)</figcaption>
-        </figure>
-        <figure>
-          <img className="imageBig" src="/next-config-js.png" />
-          <figcaption>Adding domains to next.config.js</figcaption>
-        </figure>
-      </TabPanel>
-      <TabPanel value={value} index={3}>
         <div className="flex">
           <figure>
-            <img className="image" src="/fetching-slug.png" />
+            <img className="image" src="/fetching-slug.png" alt="slug" />
             <figcaption>Fetching slug endpoint</figcaption>
           </figure>
           <div>
             <figure>
-              <img className="image" src="/lineup-insertion.png" />
+              <img className="image" src="/lineup-insertion.png" alt="lineup" />
               <figcaption>
                 Wrapping our mapped lineup artists with Link
               </figcaption>
             </figure>
             <figure>
-              <img className="image" src="/band-logo.png" />
+              <img className="image" src="/band-logo.png" alt="band-logo" />
               <figcaption>Fetching logos from server</figcaption>
             </figure>
           </div>
+        </div>
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <figure>
+          <img className="imageBig" src="/localpic.png" alt="logo" />
+          <figcaption>Logo on our server</figcaption>
+        </figure>
+        <figure>
+          <img className="imageBig" src="/placeimg.png" alt="placeimg" />
+          <figcaption>Logo on external server (placeimg)</figcaption>
+        </figure>
+        <figure>
+          <img
+            className="imageBig"
+            src="/next-config-js.png"
+            alt="next.congif.js"
+          />
+          <figcaption>Adding domains to next.config.js</figcaption>
+        </figure>
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        <div className="flex-justified">
+          <figure>
+            <img className="image" src="/tents.png" alt="tents" />
+            <figcaption>2-person and 3-person tents</figcaption>
+          </figure>
+          <figure>
+            <img className="image" src="/areas.png" alt="areas" />
+            <figcaption>
+              no pointer events when there are no available spots
+            </figcaption>
+          </figure>
         </div>
       </TabPanel>
     </Box>
